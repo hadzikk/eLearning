@@ -1,15 +1,17 @@
 <?php
 
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Auth\LoginController;
 
-Route::get('/', function () {
-    return view('index', ['title' => 'Index']);
-});
+Route::get('/', [Controller::class, 'index']);
 
-Route::get('/register', function () {
-    return view('register', ['title' => 'Register']);
-});
+Route::get('/home', [Controller::class, 'home']);
 
-Route::get('/home', function () {
-    return view('home', ['title' => 'Home']);
-});
+Route::get('/register', [RegisterController::class, 'registerView'])->name('register');
+Route::post('/register', [LoginController::class, 'registerOrder'])->name('register');
+
+Route::get('/login', [LoginController::class, 'loginView'])->name('login');
+Route::post('/logintambah', [LoginController::class, 'login'])->name('login.tambah');
+Route::get('/', [LoginController::class, 'logout'])->name('logout');
