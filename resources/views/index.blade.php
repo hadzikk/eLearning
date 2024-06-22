@@ -5,8 +5,8 @@
             <p class="font-raleway text-2xl font-bold mr-16 text-white">eLearning</p>
         </div>
         <div>
-            <a href="" class=" px-5 text-white">login</a>
-            <a href="" class=" px-5 text-white">sign up</a>
+            <a href="{{ route('login.view') }}" class=" px-5 text-white">login</a>
+            <a href="{{ route('register.view') }}" class=" px-5 text-white">sign up</a>
         </div>
     </nav>
 

@@ -11,9 +11,9 @@ Route::get('/', function(){
 
 Route::get('/home', [Controller::class, 'home']);
 
-Route::get('/login', [AuthController::class, 'index'])->name('login');
-Route::post('login', [AuthController::class, 'postLogin'])->name('login.post'); 
-Route::get('registration', [AuthController::class, 'registration'])->name('register');
-Route::post('registration', [AuthController::class, 'postRegistration'])->name('register.post'); 
+Route::get('/login', [AuthController::class, 'index'])->name('login.view');
+Route::post('/login', [AuthController::class, 'postLogin'])->name('login.post'); 
+Route::get('/registration', [AuthController::class, 'registration'])->name('register.view');
+Route::post('/registration', [AuthController::class, 'postRegistration'])->name('register.post'); 
 Route::get('home', [AuthController::class, 'home']); 
 Route::get('logout', [AuthController::class, 'logout'])->name('logout');
