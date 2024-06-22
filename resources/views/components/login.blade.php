@@ -5,7 +5,7 @@
             <p class="text-center">Login</p>
 
             <p>username</p>
-            <input type="text" name="name" placeholder="silahkan masukkan username">
+            <input type="email" name="email" placeholder="silahkan masukkan username">
             
             <p>password</p>
             <input type="password" name="password" placeholder="silahkan masukkan password">

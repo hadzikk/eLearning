@@ -2,16 +2,18 @@
 
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Auth\RegisterController;
-use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\AuthController;
+use Illuminate\Support\Facades\Auth;
 
-Route::get('/', [Controller::class, 'index']);
+Route::get('/', function(){
+    return view('index');
+});
 
 Route::get('/home', [Controller::class, 'home']);
 
-Route::get('/register', [RegisterController::class, 'registerView'])->name('register');
-Route::post('/register', [LoginController::class, 'registerOrder'])->name('register');
-
-Route::get('/login', [LoginController::class, 'loginView'])->name('login');
-Route::post('/logintambah', [LoginController::class, 'login'])->name('login.tambah');
-Route::get('/', [LoginController::class, 'logout'])->name('logout');
+Route::get('login', [AuthController::class, 'index'])->name('login');
+Route::post('post-login', [AuthController::class, 'postLogin'])->name('login.post'); 
+Route::get('registration', [AuthController::class, 'registration'])->name('register');
+Route::post('registration', [AuthController::class, 'postRegistration'])->name('register.post'); 
+Route::get('home', [AuthController::class, 'home']); 
+Route::get('logout', [AuthController::class, 'logout'])->name('logout');

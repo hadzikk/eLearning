@@ -9,11 +9,7 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 class Controller extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
-
-    public function index(){
-        return view('index');
-    }
-
+    
     public function home(){
         return view('home');
     }
