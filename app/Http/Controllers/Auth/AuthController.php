@@ -51,7 +51,7 @@ class AuthController extends Controller
                         ->withSuccess('You have Successfully loggedin');
         }
   
-        return redirect("index")->withError('Oppes! You have entered invalid credentials');
+        return redirect("/")->withError('Oppes! You have entered invalid credentials');
     }
       
     /**
@@ -86,7 +86,7 @@ class AuthController extends Controller
             return view('home');
         }
   
-        return redirect("index")->withSuccess('Opps! You do not have access');
+        return redirect("/")->withSuccess('Opps! You do not have access');
     }
     
     /**
