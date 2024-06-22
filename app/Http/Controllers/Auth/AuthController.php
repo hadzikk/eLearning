@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
   
 namespace App\Http\Controllers\Auth;
   
@@ -20,7 +20,7 @@ class AuthController extends Controller
      */
     public function index(): View
     {
-        return view('index');
+        return view('login');
     }  
       
     /**
@@ -51,7 +51,7 @@ class AuthController extends Controller
                         ->withSuccess('You have Successfully loggedin');
         }
   
-        return redirect("/")->withError('Oppes! You have entered invalid credentials');
+        return redirect("login")->withError('Oppes! You have entered invalid credentials');
     }
       
     /**
@@ -86,7 +86,7 @@ class AuthController extends Controller
             return view('home');
         }
   
-        return redirect("/")->withSuccess('Opps! You do not have access');
+        return redirect("login")->withSuccess('Opps! You do not have access');
     }
     
     /**
@@ -113,10 +113,6 @@ class AuthController extends Controller
         Session::flush();
         Auth::logout();
   
-<<<<<<< HEAD
         return Redirect('/');
-=======
-        return Redirect('index');
->>>>>>> 7c4edd726edfa23638d161db77344a4ce9851bde
     }
-} -->
+}
