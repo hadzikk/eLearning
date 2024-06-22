@@ -6,7 +6,7 @@
         </div>
         <div>
             <a href="" class=" px-5 text-white">login</a>
-            <a href="" class=" px-5 text-white">sign up</a>
+            <a href="/signup" class=" px-5 text-white">sign up</a>
         </div>
     </nav>
 
@@ -20,7 +20,7 @@
         </div>
         {{-- Content --}}
         <div class="w-2/4 min-h-full bg-white shadow rounded overflow-hidden relative">
-            <img src="{{ asset('images/annie-spratt-vGgn0xLdy8s-unsplash.jpg') }}" alt="Online Learning Illustration" class="w-full h-full rounded object-cover absolute z-0">
+            {{-- <img src="{{ asset('images/annie-spratt-vGgn0xLdy8s-unsplash.jpg') }}" alt="Online Learning Illustration" class="w-full h-full rounded object-cover absolute z-0"> --}}
             <div class="absolute z-10 py-5 px-5">
                 <p class="text-2xl font-bold w-96 text-white">belajar dimana saja</p>
             </div>
