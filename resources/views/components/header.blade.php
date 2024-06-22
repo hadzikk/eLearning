@@ -7,4 +7,4 @@
     <title>{{ $slot }}</title>
     <link rel="stylesheet" href="{{ asset('icons/css/all.min.css') }}">
 </head>
-<body class="bg-neutral-950">
+<body class="bg-neutral-950 relative">

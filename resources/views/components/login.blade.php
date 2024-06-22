@@ -1,4 +1,4 @@
-<div class="min-w-full min-h-screen absolute bg-transparent z-10 flex justify-center items-center">
+<div class="w-full h-screen absolute bg-transparent z-10 flex justify-center items-center">
     <div class="w-64 h-96 bg-white shadow rounded">
         <form class="w-full h-full py-3 px-5" action="#" method="POST">
             @csrf
