@@ -7,6 +7,6 @@
     </div>
     <div>
         <a href="" class=" px-5 text-white">login</a>
-        <a href="" class=" px-5 text-white">sign up</a>
+        <a href="{{route('register')}}" class=" px-5 text-white">sign up</a>
     </div>
 </nav>
