@@ -4,6 +4,16 @@
     src: url('../../public/raleway/static/Raleway-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'Poppins';
+    src: url('../../public/poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../../public/nunito/static/Nunito-Regular.ttf');
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
