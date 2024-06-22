@@ -15,7 +15,9 @@ Route::get('/signup', function(){
 
 Route::get('/home', [Controller::class, 'home']);
 
-Route::post('post-login', [AuthController::class, 'postLogin'])->name('login.post'); 
+
+Route::get('login', [AuthController::class, 'index'])->name('login');
+Route::post('login', [AuthController::class, 'postLogin'])->name('login.post'); 
 Route::get('registration', [AuthController::class, 'registration'])->name('register');
 Route::post('registration', [AuthController::class, 'postRegistration'])->name('register.post'); 
 Route::get('home', [AuthController::class, 'home']); 

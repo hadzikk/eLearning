@@ -113,6 +113,10 @@ class AuthController extends Controller
         Session::flush();
         Auth::logout();
   
+<<<<<<< HEAD
         return Redirect('/');
+=======
+        return Redirect('index');
+>>>>>>> 7c4edd726edfa23638d161db77344a4ce9851bde
     }
 } -->
